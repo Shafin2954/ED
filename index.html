@@ -6,6 +6,7 @@
   <title>sLA EDUCATION SYSTEM</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Custom Styles -->
@@ -13,14 +14,20 @@
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
   <!-- Hero Section -->
-  <header class="min-h-screen flex flex-col justify-center items-center text-center px-4" id="hero">
-    <h1 class="text-4xl md:text-6xl font-extrabold neon mb-4" data-aos="fade-down">
-      sLA EDUCATION SYSTEM
+  <header class="min-h-screen flex flex-col justify-center items-center text-center px-4 relative overflow-hidden" id="hero">
+    <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 animate-gradient opacity-20"></div>
+    
+    <!-- Animated Circles -->
+    <div class="circle-1 absolute w-32 h-32 bg-green-500 rounded-full opacity-30"></div>
+    <div class="circle-2 absolute w-40 h-40 bg-yellow-500 rounded-full opacity-30"></div>
+    
+    <h1 class="text-4xl md:text-6xl font-extrabold neon mb-4 relative z-10" data-aos="fade-down">
+      Smart Learning Aid
     </h1>
-    <p class="text-lg md:text-xl mb-8 max-w-2xl" data-aos="fade-up" data-aos-delay="200">
-      আসসালামু আলাইকুম এসএসসি ২০২৫... এখনই পরিকল্পনা করো তোমার ক্যারিয়ারের জন্য।
+    <p class="text-lg md:text-xl mb-8 max-w-2xl relative z-10" data-aos="fade-up" data-aos-delay="200">
+      A Different Coaching service
     </p>
-    <a href="#features" class="px-6 py-3 bg-cyan-500 rounded-full neon hover:bg-cyan-600 transition">
+    <a href="#features" class="px-6 py-3 bg-cyan-500 rounded-full neon hover:bg-cyan-600 transition relative z-10">
       Learn More
     </a>
   </header>
@@ -29,15 +36,80 @@
   <section id="letter" class="py-16 px-4 bg-gray-800">
     <div class="max-w-3xl mx-auto text-center">
       <button id="toggleLetter" class="px-6 py-3 bg-cyan-500 rounded-full neon hover:bg-cyan-600 transition" data-aos="fade-up">
-        আমাদের তরফ থেকে একটি বার্তা পেতে এখানে ক্লিক করুন
+        A Messege from Us
       </button>
       <div id="letterContent" class="mt-8 p-6 bg-gray-700 rounded-lg hidden" data-aos="fade-up" data-aos-delay="200">
-        <p class="mb-4">
-          আমাদের সিস্টেম অন্য যেকোনো সিস্টেমের মতো নয়। আমরা ক্লাস নিই না, বরং ক্লাসের জন্য সেরা রিসোর্স প্রদান করি। অনেক শিক্ষার্থী ১১ ও ১২ শ্রেণীতে পড়ার সময় গুরুত্বপূর্ণ স্টাডি রিসোর্স থেকে বঞ্চিত হয়, আমরা তাদের জন্য সেসব খুঁজে নিয়ে আসি এবং প্রয়োজনীয় নির্দেশনাও সরবরাহ করি।
-        </p>
-        <p>
-          আমরা তাদের অগ্রগতির তদারকি (Observers) করবো, শুধুমাত্র রিসোর্স পর্যালোচনা করে মুখোমুখি সমস্যা সমাধান করবো, যাতে কোনো শিক্ষার্থী গাইডেন্সের অভাবে পিছিয়ে না পড়ে।
-        </p>
+        <h2 class="text-3xl font-bold neon text-center mb-4">📊 এক নজরে প্রতিযোগিতা (HSC 2024 পরিসংখ্যান)</h2>
+    <div class="bg-gray-700 rounded-lg p-4 text-sm md:text-base space-y-2">
+      <p><strong>পরীক্ষার্থী:</strong> ১০ লাখ+</p>
+      <p><strong>BUET + অন্যান্য ইঞ্জিনিয়ারিং:</strong> ~৪,০০০</p>
+      <p><strong>সরকারি মেডিকেল:</strong> ~৪,৫০০</p>
+      <p><strong>মোট পাবলিক ইউনিভার্সিটি সুযোগ:</strong> ~৫০,০০০</p>
+      <p class="text-pink-400 font-semibold">অর্থাৎ, ১০ জনে ১ জনও পাবলিকে পড়ার সুযোগ পায় না!</p>
+    </div>
+
+    <h3 class="text-2xl font-semibold neon mt-6">🎓 চলমান সমস্যাগুলো কী?</h3>
+    <ul class="list-disc list-inside space-y-1 text-gray-300">
+      <li>প্রাইভেট ব্যাচে ভিড় (২০–১০০ জন)</li>
+      <li>সাবজেক্টভেদে টিউশন ফি ৮০০–২০০০ টাকা+</li>
+      <li>বাসায় গৃহশিক্ষক হলে ~৫–১০ হাজার/সাবজেক্ট</li>
+      <li>গাইডলাইন ও মনিটরিং এর অভাব</li>
+      <li>কোয়ালিটি রিসোর্স খুঁজে পাওয়া কঠিন</li>
+    </ul>
+
+    <h3 class="text-2xl font-semibold neon mt-6">🚀 SLA Education System - সমাধান</h3>
+    <br>
+
+    <h4 class="text-xl font-bold mt-6">💡 সুবিধাসমূহ</h4>
+    <ul class="list-disc list-inside space-y-1 text-gray-300">
+      <li>বুয়েট/DU/মেডিকেলের ভাইয়া-আপুদের কাছে পড়ার সুযোগ</li>
+      <li>ফ্রি অথচ ভালো মানের অনলাইন কনটেন্ট দিয়ে ক্লিয়ার কনসেপ্ট</li>
+      <li>প্রাইভেটে যাতায়াতের ঝামেলা ও খরচ নেই</li>
+      <li>৯–১০ জনের ছোট ব্যাচে ক্লিয়ারলি প্রশ্ন করা যাবে</li>
+      <li>তুলনামূলকভাবে অনেক কম ফি</li>
+      <li>কোথাও গেলে ক্লাস মিস হওয়ার ভয় নেই</li>
+      <li>পড়া আদায়ের মাধ্যমে রুটিন বানানো সহজ</li>
+      <li>সফল দের থেকে সরাসরি গাইডলাইন</li>
+      <li>ICT বা English অফলাইনে – আড্ডা বা মুভমেন্ট বাদ যাবে না</li>
+    </ul>
+
+    <h4 class="text-xl font-bold mt-6">💸 টিউশন ফি (চূড়ান্ত নয়)</h4>
+    <p class="text-gray-300">📚 <strong>MATH + BIOLOGY + PHYSICS + CHEMISTRY:</strong> 👉 মাত্র ২৭০০ টাকা / মাস (সম্ভাব্য)</p>
+
+    <h4 class="text-xl font-bold mt-6">📘 আমাদের সিস্টেম কেমন?</h4>
+    <p class="text-gray-300">একটি উদাহরণ:</p>
+    <ul class="list-disc list-inside space-y-1 text-gray-300">
+      <li>আজ সন্ধ্যা ৭টায় ফিজিক্সে ভাইয়া “ভেক্টর” পড়াবেন।</li>
+      <li>ক্লাস শুরুর আগে সংক্ষিপ্ত ধারণা + প্রশ্ন ধরন বোঝানো</li>
+      <li>২–৩টি ভালো ফ্রি অনলাইন ক্লাসের লিংক (হোম টাস্ক)</li>
+      <li>পরের দিন ভাইয়া ভিডিওর জটিল অংশগুলো সহজে বুঝিয়ে দেবেন</li>
+      <li>গাইড / কনসেপ্ট ম্যাপ থেকে প্রশ্ন প্র্যাকটিস</li>
+      <li>প্রতিদিন ৫–১০ মিনিট: হোম টাস্ক চেক এবং প্রোগ্রেস ফলোআপ</li>
+    </ul>
+    <p class="text-green-400 font-semibold">✅ মাসে ২৭টি ক্লাস!</p>
+
+    <h4 class="text-xl font-bold mt-6">🗣️ Career Guideline (Free Session)</h4>
+    <p class="text-gray-300">👉 এখনই জয়েন করতে পারো!</p>
+
+    <h4 class="text-xl font-bold mt-6">📡 ক্লাস পরিচালনার মাধ্যম</h4>
+    <ul class="list-disc list-inside space-y-1 text-gray-300">
+      <li>Zoom App ব্যবহার করে লাইভ ক্লাস</li>
+      <li>ট্যাব + প্যাড পেন → Whiteboard এ লেখা</li>
+      <li>মোবাইল, ল্যাপটপ, ট্যাব → যেকোনো ডিভাইস থেকে জয়েন</li>
+      <li>চোখের আরাম ও মনোযোগের জন্য বড় স্ক্রিনে ক্লাস রিকমেন্ডেড</li>
+      <li>বিকল্প: স্মার্টফোন + USB Supported Monitor (৪-৬ হাজারে ভালো পুরোনো মনিটর পাওয়া যায়)</li>
+    </ul>
+
+    <h4 class="text-xl font-bold mt-6">🛠️ কিভাবে যুক্ত হবে?</h4>
+    <ul class="list-disc list-inside space-y-1 text-gray-300">
+      <li>আমাদের WhatsApp নাম্বারে মেসেজ দাও</li>
+      <li>আমরা ছোট্ট ইন্টারভিউ নিয়ে বুঝে নেব তুমি সিস্টেমটা জানো কিনা</li>
+      <li>তারপর আমরা একটি প্রাইভেট গ্রুপ খুলব</li>
+      <li>গ্রুপে আলোচনা করে ক্লাস শুরুর তারিখ ঠিক করা হবে</li>
+    </ul>
+
+    <p class="mt-6 text-center text-gray-400">🤝 তোমার মতামত আমাদের জন্য গুরুত্বপূর্ণ — Feel free to reach out!</p>
+    <p class="text-center text-gray-300">👨‍🎓 With best wishes,<br>Adityo (BUET) • Shafin (DU) • Labib (DMC)</p>
       </div>
     </div>
   </section>
@@ -47,16 +119,27 @@
     <div class="max-w-5xl mx-auto">
       <h2 class="text-3xl font-bold neon text-center mb-8" data-aos="fade-right">আমাদের সুবিধাগুলো</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="p-6 bg-gray-800 rounded-xl hover:scale-105 transition" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-xl font-semibold mb-2 neon">BUET & DU শিক্ষকদের ক্লাস</h3>
-          <p>শিক্ষার মান নিশ্চিত করে ক্যারিয়ারের গল্প গড়ে তুলুন।</p>
+        <div class="p-6 bg-gray-800 rounded-xl hover:scale-105 transition relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <!-- Unique circles -->
+          <div class="absolute -top-10 -left-10 w-32 h-32 bg-cyan-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-5 -right-5 w-24 h-24 bg-pink-500 rounded-full opacity-30"></div>
+          <div class="absolute" style="top: -10px; left: -10px; width: 100px; height: 100px; background: #06b6d4; border-radius: 50%; opacity: 0.3;"></div>
+          <div class="absolute" style="bottom: -20px; right: -20px; width: 80px; height: 80px; background: #ec4899; border-radius: 50%; opacity: 0.3;"></div>
+          <h3 class="text-xl font-semibold mb-2 neon relative">BUET, Medical, DU শিক্ষকদের ক্লাস</h3>
+          <p class="relative">শিক্ষার মান নিশ্চিত করে ক্যারিয়ারের গল্প গড়ে তুলুন।</p>
         </div>
-        <div class="p-6 bg-gray-800 rounded-xl hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-xl font-semibold mb-2 neon">Free Online Resources</h3>
+        <div class="p-6 bg-gray-800 rounded-xl hover:scale-105 transition relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <!-- Unique circles -->
+          <div class="absolute -top-5 -right-10 w-40 h-40 bg-purple-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-10 -left-5 w-20 h-20 bg-yellow-500 rounded-full opacity-30"></div>
+          <h3 class="text-xl font-semibold mb-2 neon relative">Free Online Resources</h3>
           <p>বাছাইকৃত ফ্রি ভিডিও ও রিসোর্স দিয়ে কনসেপ্ট পরিষ্কার করুন।</p>
         </div>
-        <div class="p-6 bg-gray-800 rounded-xl hover:scale-105 transition" data-aos="fade-up" data-aos-delay="300">
-          <h3 class="text-xl font-semibold mb-2 neon">কম গ্রুপ সাইজ</h3>
+        <div class="p-6 bg-gray-800 rounded-xl hover:scale-105 transition relative overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+          <!-- Unique circles -->
+          <div class="absolute -top-10 -left-5 w-28 h-28 bg-green-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-5 -right-10 w-36 h-36 bg-red-500 rounded-full opacity-30"></div>
+          <h3 class="text-xl font-semibold mb-2 neon relative">কম গ্রুপ সাইজ</h3>
           <p>৯-১০ জনের গ্রুপে ব্যক্তিগত মনোযোগ পাওয়ার সুযোগ।</p>
         </div>
       </div>
@@ -66,19 +149,19 @@
   <!-- Why We're Different -->
   <section id="difference" class="py-16 px-4 bg-gray-800">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold neon text-center mb-8" data-aos="zoom-in">আমাদের দৃষ্টিকোণ</h2>
+      <h2 class="text-3xl font-bold neon text-center mb-8" data-aos="zoom-in">Things that Make Us Different</h2>
       <div class="space-y-8">
         <div class="p-6 bg-gray-700 rounded-xl" data-aos="fade-left">
           <h3 class="text-xl font-semibold neon mb-2">Resource-Based Approach</h3>
-          <p>আমরা ক্লাস নিই না—আমরা শ্রেষ্ঠ রিসোর্স সরবরাহ করি।</p>
+          <p>আমরা প্রচলিত ভাবে ক্লাস নিই না — আমরা শ্রেষ্ঠ রিসোর্স সরবরাহ করি</p>
         </div>
         <div class="p-6 bg-gray-700 rounded-xl" data-aos="fade-right">
           <h3 class="text-xl font-semibold neon mb-2">Dedicated Monitors</h3>
-          <p>শিক্ষার্থীদের অগ্রগতি তত্ত্বাবধান করা।</p>
+          <p>শিক্ষার্থীদের অগ্রগতি তত্ত্বাবধান করি</p>
         </div>
         <div class="p-6 bg-gray-700 rounded-xl" data-aos="fade-left">
           <h3 class="text-xl font-semibold neon mb-2">Problem-Solving Sessions</h3>
-          <p>রি-সোর্সের পর উদ্ভূত যেকোনো সমস্যার জন্য আমরা সরাসরি সাপোর্ট এবং সমাধান প্রদান করি।</p>
+          <p>রি-সোর্সের বুঝতে কোথাও সমস্যা হলে ক্লাস নিয়ে বুঝিয়ে দিয়</p>
         </div>
       </div>
     </div>
@@ -89,31 +172,139 @@
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-bold neon mb-8" data-aos="zoom-in">Our Mentors</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Mentor Cards -->
-        <div class="bg-gray-800 p-6 rounded-2xl transform hover:rotate-1 hover:scale-105 transition" data-aos="flip-left">
-          <img src="assets/Shafin.jpg" alt="Shafin Ahmed Soron" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-          <h3 class="text-xl font-semibold neon">Shafin Ahmed Soron</h3>
-          <p>1st Year, Data Science, DU</p>
+        <!-- Mentor Card 1 -->
+        <div class="card bg-gray-800 p-6 rounded-2xl transform transition relative overflow-hidden" data-aos="flip-left">
+          <!-- Unique circles -->
+          <div class="absolute -top-10 -left-10 w-32 h-32 bg-cyan-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-5 -right-5 w-24 h-24 bg-pink-500 rounded-full opacity-30"></div>
+          <!-- Flip Container -->
+          <div class="flip-container relative w-full h-full">
+            <!-- Front Side -->
+            <div class="card-front flex flex-col justify-center items-center">
+              <img src="assets/Shafin.jpg" alt="Shafin Ahmed Soron" class="w-28 h-28 mx-auto rounded-full mb-4 object-cover">
+              <h3 class="text-xl font-semibold neon">Shafin Ahmed Soron</h3>
+              <p>1st Year, Data Science, DU</p>
+            </div>
+            <!-- Back Side -->
+            <div class="card-back flex flex-col justify-center items-center bg-gray-700 p-4 rounded-2xl">
+              <h3 class="text-xl font-semibold neon mb-2">Shafin Ahmed Soron</h3>
+              <p>BUET - 762</p>
+              <p>DU - 304</p>
+              <p>SUST - 47</p>
+            </div>
+          </div>
         </div>
-        <div class="bg-gray-800 p-6 rounded-2xl transform hover:rotate-1 hover:scale-105 transition" data-aos="flip-up" data-aos-delay="100">
-          <img src="assets/Aditya.jpg" alt="Aditya Ghosh" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-          <h3 class="text-xl font-semibold neon">Aditya Ghosh</h3>
-          <p>1st Year, Biotechnology, BUET</p>
+
+        <!-- Mentor Card 2 -->
+        <div class="card bg-gray-800 p-6 rounded-2xl transform transition relative overflow-hidden" data-aos="flip-up" data-aos-delay="100">
+          <!-- Unique circles -->
+          <div class="absolute -top-5 -right-10 w-40 h-40 bg-purple-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-10 -left-5 w-20 h-20 bg-yellow-500 rounded-full opacity-30"></div>
+          <!-- Flip Container -->
+          <div class="flip-container relative w-full h-full">
+            <!-- Front Side -->
+            <div class="card-front flex flex-col justify-center items-center">
+              <img src="assets/Aditya.jpg" alt="Aditya Ghosh" class="w-28 h-28 mx-auto rounded-full mb-4 object-cover">
+              <h3 class="text-xl font-semibold neon">Aditya Ghosh</h3>
+              <p>1st Year, Biomedical Engineering, BUET</p>
+            </div>
+            <!-- Back Side -->
+            <div class="card-back flex flex-col justify-center items-center bg-gray-700 p-4 rounded-2xl">
+              <h3 class="text-xl font-semibold neon mb-2">Aditya Ghosh</h3>
+              <p>BUET - 850</p>
+              <p>DU - ???</p>
+              <p>Medical - 1000?</p>
+            </div>
+          </div>
         </div>
-        <div class="bg-gray-800 p-6 rounded-2xl transform hover:rotate-1 hover:scale-105 transition" data-aos="flip-right" data-aos-delay="200">
-          <img src="assets/Labib.jpg" alt="Labib Hasan" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-          <h3 class="text-xl font-semibold neon">Labib Hasan</h3>
-          <p>1st Year, MBBS, Dinajpur Medical College</p>
+
+        <!-- Mentor Card 3 -->
+        <div class="card bg-gray-800 p-6 rounded-2xl transform transition relative overflow-hidden" data-aos="flip-right" data-aos-delay="200">
+          <!-- Unique circles -->
+          <div class="absolute -top-10 -left-5 w-28 h-28 bg-green-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-5 -right-10 w-36 h-36 bg-red-500 rounded-full opacity-30"></div>
+          <!-- Flip Container -->
+          <div class="flip-container relative w-full h-full">
+            <!-- Front Side -->
+            <div class="card-front flex flex-col justify-center items-center">
+              <img src="assets/Labib.jpg" alt="Labib Hasan" class="w-28 h-28 mx-auto rounded-full mb-4 object-cover">
+              <h3 class="text-xl font-semibold neon">Labib Hasan</h3>
+              <p>1st Year, MBBS, Dinajpur Medical College</p>
+            </div>
+            <!-- Back Side -->
+            <div class="card-back flex flex-col justify-center items-center bg-gray-700 p-4 rounded-2xl">
+              <h3 class="text-xl font-semibold neon mb-2">Labib Hasan</h3>
+              <p>Medical - ???</p>
+              <p>PCL Tear</p>
+              <p>Red Card</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Our Services Section -->
+  <section id="services" class="py-16 bg-gray-800 px-4">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold neon mb-8" data-aos="zoom-in">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- Service Card 1 -->
+        <div class="p-6 bg-gray-700 rounded-xl hover:scale-105 transition relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <div class="absolute -top-10 -left-10 w-32 h-32 bg-cyan-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-5 -right-5 w-24 h-24 bg-pink-500 rounded-full opacity-30"></div>
+          <h3 class="text-xl font-semibold neon relative">Physics</h3>
+        </div>
+        <!-- Service Card 2 -->
+        <div class="p-6 bg-gray-700 rounded-xl hover:scale-105 transition relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <div class="absolute -top-5 -right-10 w-40 h-40 bg-purple-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-10 -left-5 w-20 h-20 bg-yellow-500 rounded-full opacity-30"></div>
+          <h3 class="text-xl font-semibold neon relative">Chemistry</h3>
+        </div>
+        <!-- Service Card 3 -->
+        <div class="p-6 bg-gray-700 rounded-xl hover:scale-105 transition relative overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+          <div class="absolute -top-10 -left-5 w-28 h-28 bg-green-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-5 -right-10 w-36 h-36 bg-red-500 rounded-full opacity-30"></div>
+          <h3 class="text-xl font-semibold neon relative">Math</h3>
+        </div>
+        <!-- Service Card 4 -->
+        <div class="p-6 bg-gray-700 rounded-xl hover:scale-105 transition relative overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+          <div class="absolute -top-10 -left-10 w-32 h-32 bg-blue-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-5 -right-5 w-24 h-24 bg-orange-500 rounded-full opacity-30"></div>
+          <h3 class="text-xl font-semibold neon relative">Biology</h3>
+        </div>
+        <!-- Service Card 5 -->
+        <div class="p-6 bg-gray-700 rounded-xl hover:scale-105 transition relative overflow-hidden" data-aos="fade-up" data-aos-delay="500">
+          <div class="absolute -top-10 -left-20 w-32 h-32 bg-pink-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-10 -right-5 w-24 h-24 bg-yellow-500 rounded-full opacity-30"></div>
+          <h3 class="text-xl font-semibold neon relative">ICT</h3>
+        </div>
+        <!-- Service Card 6 -->
+        <div class="p-6 bg-gray-700 rounded-xl hover:scale-105 transition relative overflow-hidden" data-aos="fade-up" data-aos-delay="600">
+          <div class="absolute -top-10 -right-15 w-40 h-40 bg-teal-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-10 -left-10 w-20 h-10 bg-blue-500 rounded-full opacity-30"></div>
+          <h3 class="text-xl font-semibold neon relative">Programming</h3>
+        </div>
+        <!-- Service Card 7 -->
+        <div class="p-6 bg-gray-700 rounded-xl hover:scale-105 transition relative overflow-hidden" data-aos="fade-up" data-aos-delay="700">
+          <div class="absolute -top-15 -left-5 w-28 h-28 bg-yellow-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-10 -right-10 w-36 h-36 bg-cyan-500 rounded-full opacity-30"></div>
+          <h3 class="text-xl font-semibold neon relative">Crafting</h3>
+        </div>
+        <!-- Service Card 8 -->
+        <div class="p-6 bg-gray-700 rounded-xl hover:scale-105 transition relative overflow-hidden" data-aos="fade-up" data-aos-delay="800">
+          <div class="absolute -top-5 -left-5 w-32 h-32 bg-red-500 rounded-full opacity-30"></div>
+          <div class="absolute -bottom-15 -right-10 w-24 h-24 bg-cyan-500 rounded-full opacity-30"></div>
+          <h3 class="text-xl font-semibold neon relative">Robotics</h3>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <footer class="py-12 text-center">
-    <h4 class="text-2xl neon mb-4" data-aos="fade-up">Join Our Free Session</h4>
-    <p data-aos="fade-up" data-aos-delay="100">WhatsApp: 017666666 এ মেসেজ দিন ইন্টারভিউয়ের জন্য।</p>
-    <p> Still Under Development...</p>
+  <footer class="py-12 bg-gray-700 text-center">
+    <h4 class="text-2xl neon mb-4" >Join Our Free Sessions</h4>
+    <a style="color: rgb(126, 126, 255)"href="https://wa.me/8801551552954" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Message Us on WhatsApp</a>
+    <p style="color: gray" class="text-sm">By Sh54</p>
   </footer>
 
   <!-- External Scripts -->
