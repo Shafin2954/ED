@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const letter = document.getElementById('letterContent');
 
   btn.addEventListener('click', () => {
+    // Stop the bounce animation
+    btn.classList.remove('animate-bounce');
+
     if (letter.classList.contains('hidden')) {
       // Show the content
       letter.classList.remove('hidden');
