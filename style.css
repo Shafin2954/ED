@@ -1,5 +1,12 @@
 body { font-family: sans-serif; }
 .neon { text-shadow: 0 0 8px #0ff, 0 0 16px #0ff; }
+.neon-gold {
+  text-shadow:
+    0 0 8px #ffd700,
+    0 0 16px #ffd700,
+    0 0 24px #ffa500,
+    0 0 32px #ffd700;
+}
 .hidden { display: none; }
 
 @keyframes gradient {
@@ -99,6 +106,10 @@ body { font-family: sans-serif; }
 }
 
 .card:hover .flip-container {
+  transform: rotateY(180deg);
+}
+
+.card.flipped .flip-container {
   transform: rotateY(180deg);
 }
 
