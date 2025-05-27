@@ -290,7 +290,8 @@
           <li>ক্লাস শুরুর সম্ভাব্য সময় কুরবানির ঈদ এর পর</li>
         </ul>
         <p class="mt-6 text-center text-gray-400">🤝 তোমার মতামত আমাদের জন্য গুরুত্বপূর্ণ — Feel free to reach out!</p><br>
-        <p class="text-center text-gray-300"> With best wishes,<br>Aditya (BUET) • Shafin (DU) • Labib (DJMC)</p>
+        <a target="_blank" href="https://forms.gle/xUnFQwdjVfFEyLkh8"><button id="showFormBtn" class="mt-6 mb-4 px-6 py-3 bg-yellow-400 text-gray-900 font-bold rounded-lg shadow-lg animate-bounce hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-200 transition">Click to Send Feedback</button></a>
+        <p class="text-center text-gray-300"> With best wishes,<br>Aditya (BUET) • Shafin (DU) • Labib (DjMC)</p>
       </div>
     </div>
   </section>
@@ -307,5 +308,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
+  <script>
+    // Show the form container and hide the button when the button is clicked
+    document.getElementById('showFormBtn').addEventListener('click', function() {
+      document.getElementById('formContainer').classList.toggle('hidden');
+      this.classList.add('hidden');
+    });
+  </script>
 </body>
 </html>
